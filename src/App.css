@@ -1,38 +1,194 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+.principal{
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  display: flex;
+  justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  margin-left: 1.5rem;
+  width: 10rem;
+  height: 6.5rem;
+  border-radius: 90%;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo:hover{
+  transform: scale(1.2);
+  box-shadow: 0px 10px 20px 2px rgba(29, 11, 11, 0.25);
+}
+.left{
+  padding: 2rem;
+  padding-top: 1.5rem;
+  flex: 3;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.right{
+  flex: 1;
+  position: relative;
+  background: rgb(237,0,100);
+  background: linear-gradient(225deg, rgba(237,0,100,1) 0%, rgba(232,151,8,1) 51%, rgba(254,227,12,1) 100%);
+}
+.header-menu{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: white;
+  font-family: 'Courgette';
+  font-size: 1.1rem;
+}
+.header-menu li{
+  cursor: pointer;
+}
+.header-menu li:hover{
+  color: #efb96d
+}
+.principal-text{
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
   color: white;
+  text-overflow: inherit;
+}
+.vitalidad{
+  font-size: 3rem;
+}
+.principal-text div:nth-of-type(3){
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: 'Quicksand';
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 80%;
+}
+.figures{
+  display: flex;
+  gap: 2rem;
+}
+.figures div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Quicksand';
+}
+.figures div span:nth-of-type(1){
+  color: white;
+  font-size: 2rem;
+}
+.figures div span:nth-of-type(2){
+  color: rgb(189, 189, 189);
+  text-transform: uppercase;
+}
+.btn{
+  background-color: none;
+  padding: .8em 2em;
+  border: 2px solid;
+  transition: 1s;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+.btn-slide{
+  color:white;
+  border-color: #fb8b24;
+  font-weight: bold;
+}
+.btn-slide:hover, .btn-slide:focus{
+  cursor: pointer;
+  border-color: #fb8b24;
+  color: white;
+  transition: 1s;
+  box-shadow: inset 13em 0 0 0 #fb8b24;
+}
+.right .btn-right{
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+  background-color: none;
+  padding: .8em .8em;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+  transition: 1.2s;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+.btn-right:hover, .btn-right:focus{
+  cursor: pointer;
+  color: black;
+  transition: 1s;
+  box-shadow: inset 13em 0 0 0 white;
+  transition: 1.5s;
+}
+.heart-rate{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  background-color: #6c757d;
+  padding: 1rem;
+  align-items: flex-start;
+  border-radius: 5px;
+  position: absolute;
+  right: 4rem;
+  top: 7rem;
+
+}
+.heart-rate span:nth-child(2){
+  font-family: 'Quicksand';
+  color: rgb(189, 189, 189);
+}
+.heart-rate span:nth-child(3){
+  color: white;
+  font-size: 1.5rem;
+}
+.gym-exercises{
+  position: absolute;
+  top: 18rem;
+  right: 10rem;
+  width: 25rem;
+}
+.calories{
+  display: flex;
+  background-color: #403d39;
+  border-radius: 5px;
+  padding: .5rem;
+  width: fit-content;
+  position: absolute;
+  top: 25rem;
+  right: 37rem;
+}
+.calories div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.calories span:nth-child(1){
+  color: rgb(189, 189, 189);
+  font-family: 'Quicksand';
+}
+.calories span:nth-child(2){
+  color: white;
+  font-size: 1.5rem;
+}
+.burn-calories{
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.stroke-text{
+  color:transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
