@@ -30,7 +30,8 @@ export const Navbar = () => {
               <li><Link to='#'>Home</Link></li>
               <li><Link to='#'>Nosotros</Link></li>
               <li><Link to='#'>Rutinas</Link></li>
-              <li><Link to='#'>Planes</Link></li>
+              <li><Link to='#'>Horarios</Link></li>
+              <li><Link to='#'>Precios</Link></li>
               <li><Link to='#'>Contáctanos</Link></li>             
             </ul>
         </nav>

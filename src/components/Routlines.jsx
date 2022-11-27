@@ -5,8 +5,7 @@ import functional from '../assets/functional.mp4'
 import localized from '../assets/localized.mp4'
 import recreative from '../assets/recreative.mp4'
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+
 
 
 export const Routlines =() => {
@@ -25,17 +24,17 @@ export const Routlines =() => {
           <Cards
           vid = {functional}
           title = "Entrenamiento Funcional"
-          description = "Con el entrenamiento funcional se busca trabajar los músculos imitando los movimientos cotidianos"
+          description = "Con este entrenamiento vas a trabajar tus músculos y articulaciones, imitando tus movimientos cotidianos. Te va a ayudar a mejorar la movilidad corporal, el equilibrio, la salud cardiovascular, corrigir la postura y fortalecer la masa muscular"
           />
           <Cards 
           vid = {localized}
           title = "Gimnasia localizada"
-          description = "La gimnasia localizada es una modalidad de gimnasia, en la cual se trabaja principalmente las capacidades de resistencia y fuerza muscular, por medio de ejercicios que involucran el trabajo de los principales grupos musculares, utilizando diferentes tipos de sobrecarga o con el peso del propio cuerpo."
+          description = "Con esta modalidad de gimnasia vas a trabajar ejercicios de efectos localizados, utilizarás el peso de tú cuerpo y una variedad de elementos con el objetivo de aumentar la resistencia y tonificar músculos."
           />
           <Cards
           vid = {recreative}
           title = "Gimnasia para adultos mayores"
-          description = "La gimnasia para adultos mayores es una actividad perfecta para las personas en este rango de edad que quieran mantenerse en forma sin hacer grandes esfuerzos y a partir de ejercicios adaptados a su estado físico"
+          description = "Esta actividad es perfecta para las personas que esten en un rango de edad avanzado y quieran mantenerse en forma sin hacer grandes esfuerzos a partir de ejercicios adaptados a su estado físico."
           />
         </div>
         

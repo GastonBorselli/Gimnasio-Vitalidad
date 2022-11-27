@@ -4,10 +4,10 @@
 body{
   margin:0px;
   padding: 0px;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.89) 0%, rgba(34, 33, 33, 0.788) 100%);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.89) 0%, rgba(27, 26, 26, 0.829) 100%);
    
 }
-
+/* Navbar */
 nav{
   display: flex;
   justify-content: space-between;
@@ -72,11 +72,12 @@ nav .menu-btn,
 		display:none;
 }
 
+/* Home */
 .principal{
   display: flex;
   justify-content: space-between;
   width:100%;
-  height:650px;
+  padding-bottom: 4rem;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,7 +122,7 @@ nav .menu-btn,
   color: rgb(230, 157, 0);
   text-overflow: inherit;
 }
-.despription{
+.description{
   color: #fff !important;
 }
 .vitalidad{
@@ -207,7 +208,7 @@ nav .menu-btn,
   flex-direction: column;
   gap: 1rem;
   width: fit-content;
-  background-color: #403d39;
+  background-color: rgb(29, 26, 23);
   padding: 1rem;
   align-items: flex-start;
   border-radius: 5px;
@@ -233,7 +234,7 @@ nav .menu-btn,
 }
 .calories{
   display: flex;
-  background-color: #403d39;
+  background-color: rgb(29, 26, 23);
   border-radius: 5px;
   padding: .5rem;
   width: fit-content;
@@ -260,7 +261,7 @@ nav .menu-btn,
 
 /*rutinas*/
 .div-rutlines{
-  height: 640px;
+  padding: 2.5rem 0;
 }
 
 .routlines{
@@ -291,13 +292,16 @@ nav .menu-btn,
 .card{
   overflow: hidden;
   box-shadow: 0 1px 3px grey;
+  border-radius: .5rem 3rem .5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
   padding: 0 .5rem 0 0;
-  height: 34rem;
+  height: 32rem;
+  transition: 1s;
+  background-image: linear-gradient(to right, rgb(29, 26, 23) 0%, rgba(44, 39, 39, 0.877) 100%);
 }
 .card_title{
   padding: 0;
@@ -317,7 +321,127 @@ nav .menu-btn,
   color: #fff;
 }
 .card:hover{
-  transform: scale(1.02);
+  transform: scale(1.03);
+  transition: 1s;
+  background-image: none;
+}
+
+/* Clases */
+.schedule{
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+.schedule_container{
+  margin-top: 1.2rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+}
+
+.programs_header{
+  display: flex;
+  gap: 5rem;
+  font-weight: bold;
+  font-size: 3rem;
+  justify-content: center;
+  color: rgb(230, 157, 0);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.container{
+  width: 90%;
+  max-width: 1280px;
+  margin: 1.5rem auto 0 auto;
+  background: rgb(214, 214, 214);
+  border-radius: 5rem;
+}
+table{
+  width: 100%;
+  text-align: center;
+  
+}
+th{
+  padding: 1rem 0;
+  font-style: italic;
+}
+
+.time{
+  font-style: italic;
+}
+.dark{
+  font-weight: bold;
+}
+
+/* price */
+.prices{
+  padding: 2.5rem;
+}
+
+.description_price{
+  color:#fff;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: 'Quicksand';
+  text-transform: none;
+  letter-spacing: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+
+.carousel{
+  margin: 0 auto;
+  margin-top: 3rem;
+  width: 70%;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.carousel_card{
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  transition: all .1s ease;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgb(29, 26, 23) 0%, rgba(44, 39, 39, 0.877) 100%);
+}
+.card-top h1{
+  font-size: 1.5rem;
+  font-style: 'Quicksand';
+  margin: 2rem 1rem;
+}
+.card-top > img{
+  width: 276px;
+  height: 200px;
+  object-fit: cover;
+}
+.card-bottom{
+  margin: 2rem 1rem;
+}
+.item-price{
+  position: relative;
+  font-size: 1.3rem;
+}
+.item-price::before{
+  content: '';
+  background: rgb(230, 157, 0);
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  height: .15rem;
+  border-radius: 2rem;
 }
 
 .white-text{

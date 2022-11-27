@@ -19,7 +19,7 @@ export const Principal = () => {
                 <span>bienestar corporal</span>
               </div>
 
-              <div className="despription">
+              <div className="description">
                 Te ayudaremos a alcanzar el balance ideal entre tu cuerpo y mente
               </div>
             </div>
@@ -51,7 +51,7 @@ export const Principal = () => {
                 src={heart}
                 style={{width:'80px',height:'70px'}}
                 autoplay
-                loop
+                loop={2}
                 speed={0.5}/>
               </div>
               <span>Ritmo cardíaco</span>
@@ -62,7 +62,7 @@ export const Principal = () => {
               <Player src={gym}
               style={{width:'450px'}}
               autoplay
-              loop
+              loop={2}
               speed={1}/>
             </div>
 
