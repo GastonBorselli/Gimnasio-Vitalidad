@@ -17,7 +17,7 @@ export const Navbar = () => {
   window.addEventListener('scroll',changeBackground);
 
   return (
-    <div>
+    <div className='navbar'>
         <nav className={nav ? 'nav active' :'nav'}>
             <Link to='#' className='logo'>
               <img src={logo} alt="logo"/>
@@ -28,7 +28,6 @@ export const Navbar = () => {
             </label>
             <ul className='header-menu'>
               <li><Link to='#'>Home</Link></li>
-              <li><Link to='#'>Nosotros</Link></li>
               <li><Link to='#'>Rutinas</Link></li>
               <li><Link to='#'>Horarios</Link></li>
               <li><Link to='#'>Precios</Link></li>
