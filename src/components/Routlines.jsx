@@ -12,7 +12,7 @@ export const Routlines =() => {
  
 
   return (
-    <div className='div-rutlines'>
+    <div className='div-rutlines' name='home'>
         <div className='routlines' id='routlines'>
             <div className="routlines-header">
                 <span className='stroke-text'>Explora </span> 

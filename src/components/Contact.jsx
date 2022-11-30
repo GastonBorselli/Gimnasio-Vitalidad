@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
-import {FaInstagram} from 'react-icons/fa'
+import {FiInstagram} from 'react-icons/fi'
 import {FaWhatsapp} from 'react-icons/fa'
 
 export const Contact = () => {
@@ -10,7 +10,7 @@ export const Contact = () => {
   console.log(errors);
 
   return (
-    <div className='contact'>
+    <div className='contact' name='home'>
         <div className="contact_container">
           <div className="contact_header">
               <span className='stroke-text'>Contáctate </span>
@@ -50,7 +50,7 @@ export const Contact = () => {
 
               <label htmlFor="">Entrenamiento que le interesa</label>
               <select {...register("title", { required: true})} >
-                <option value="" disabled selected>Selecciona un entrenamiento</option>
+                <option disabled selected>Selecciona un entrenamiento</option>
                 <option value="Funcional">Funcional</option>
                 <option value="Localizada">Localizada</option>
                 <option value="Gimnasia adultos mayores">Gimnasia adultos mayores</option>
@@ -64,7 +64,7 @@ export const Contact = () => {
           </div>
           <div className='social'>
             <div className='instagram'>
-              <a href="https://instagram.com/" target={"blank"}><FaInstagram size={'4rem'}/></a>
+              <a href="https://www.instagram.com/vitalidad.lm/" target={"blank"}><FiInstagram size={'4rem'}/></a>
             </div>
             <div className="facebook">
               <a href="https://web.whatsapp.com/"><FaWhatsapp size={'4rem'}/></a>

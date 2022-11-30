@@ -1,15 +1,14 @@
 import React from 'react'
-import {Navbar} from './Navbar'
 import {Player} from '@lottiefiles/react-lottie-player'
 import gym from '../assets/gym.json'
 import heart from '../assets/heart.json'
 import chart from '../assets/chart.json'
+import {Link} from 'react-router-dom'
 
-export const Principal = () => {
+export const Home = () => {
   return (
-    <div className='principal'>
+    <div className='principal' name='home'>
         <div className="left">
-              <Navbar/>
             <div className="principal-text">
               <div>
                 <span className='stroke-text'>Mejora </span>
@@ -40,7 +39,7 @@ export const Principal = () => {
             </div>
 
             <div className="principal-btn">
-              <a href="#/" className="btn btn-slide">Inscríbete ahora</a>
+              <Link to='/contact' style={{color:'inherit', textDecoration:'inherit'}}><button className="btn btn-slide">Inscríbete ahora</button></Link>
             </div>
       </div>
 
@@ -51,7 +50,7 @@ export const Principal = () => {
                 src={heart}
                 style={{width:'80px',height:'70px'}}
                 autoplay
-                loop={2}
+                loop
                 speed={0.5}/>
               </div>
               <span>Ritmo cardíaco</span>
@@ -62,7 +61,7 @@ export const Principal = () => {
               <Player src={gym}
               style={{width:'450px'}}
               autoplay
-              loop={2}
+              loop
               speed={1}/>
             </div>
 

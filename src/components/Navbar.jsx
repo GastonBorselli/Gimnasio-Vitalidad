@@ -1,10 +1,12 @@
 import React, {useState} from 'react'
 import logo from '../assets/logo.png'
-import {Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
+import {FaBars,FaTimes} from 'react-icons/fa'
 
 export const Navbar = () => {
 
   const [nav,setnav] = useState(false);
+  const handleNav = () => setnav(!nav);
 
   const changeBackground = ()=>{
     if (window.scrollY>=50) {
@@ -18,23 +20,26 @@ export const Navbar = () => {
 
   return (
     <div className='navbar'>
-        <nav className={nav ? 'nav active' :'nav'}>
-            <Link to='#' className='logo'>
+        <nav className='container-nav'>
+          <Link to='/'>
+            <div className="logo">
               <img src={logo} alt="logo"/>
-            </Link>
-            <input className='menu-btn' type="checkbox" id='menu-btn'/>
-            <label className='menu-icon' htmlFor="menu-btn">
-              <span className='nav-icon'></span>
-            </label>
-            <ul className='header-menu'>
-              <li><Link to='#'>Home</Link></li>
-              <li><Link to='#'>Rutinas</Link></li>
-              <li><Link to='#'>Horarios</Link></li>
-              <li><Link to='#'>Precios</Link></li>
-              <li><Link to='#'>Contáctanos</Link></li>             
+              <span className='title-nav'>Gimnasio Vitalidad</span>
+            </div>
+          </Link>
+            <ul className={nav ? 'header-menu active' : 'header-menu'}>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/routlines'>Rutinas</Link></li>
+              <li><Link to='/classes'>Horarios</Link></li>
+              <li><Link to='/prices'>Precios</Link></li>
+              <li><Link to='/contact'>Contáctanos</Link></li>             
+              <Link to='/contact' style={{color:'inherit',textDecoration:'inherit'}}><button type='button' className='btn-right'>Únete ahora</button></Link>
             </ul>
+            <div className="hamburguer" onClick={handleNav}>
+              {!nav ? (<FaBars className='icon'/>):(<FaTimes className='icon'/>)}              
+            </div>
         </nav>
-        <a href="#/" className='btn-right'>Únete ahora</a>
+        
     </div>
   )
 }

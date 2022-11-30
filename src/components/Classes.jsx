@@ -7,7 +7,7 @@ export const Classes = () => {
 
 
 return (
-<div className='schedule'>
+<div className='schedule' name='home'>
     <div className="schedule_container">
         <div className="programs_header">
             <span className="stroke-text">Conocé </span>

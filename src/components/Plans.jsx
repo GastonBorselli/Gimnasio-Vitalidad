@@ -44,7 +44,7 @@ export const Plans = () => {
         };
 
   return (
-    <div className='prices'>
+    <div className='prices' name='home'>
         <div className="prices_container">
           <div className="programs_header">
               <span className='stroke-text'>Nuestros </span>
