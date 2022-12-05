@@ -558,7 +558,7 @@ th{
 }
 .form-container form button{
   height: 3rem;
-  width: 20%;
+  width: 40%;
   margin-top: 1rem;
   border: 2px solid #fb8b24;
   border-radius: .5rem;
@@ -588,6 +588,12 @@ th{
     color: #332828;
     border-radius: 5px;
     font-size: 16px;
+    margin-bottom: 1rem;
+}
+.message{
+  margin-top: .5rem;
+  background-color: #e7e6e6d2;
+  border-radius: 5px;
 }
 .form-container form small{
   margin-top: -2rem;

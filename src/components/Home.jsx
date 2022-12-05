@@ -43,7 +43,8 @@ export const Home = () => {
             </div>
       </div>
 
-        <div className="right">         
+        <div className="right"> 
+                
             <div className="heart-rate">
               <div className='heart'>
                 <Player 

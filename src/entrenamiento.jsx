@@ -1,12 +1,14 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
+
+
+
+export const entrenamientos = [
     {
-        entrenamiento: "Funcional"
+        value:"Funcional",label:'Funcional'
     },
     {
-        entrenamiento: "Localizada"
+        value: "Localizada",label:'Localizada'
     },
     {
-        entrenamiento: "Gimnasia adultos mayores"
+        value: "Gimnasia adultos mayores", label:'Gimnasia adultos mayores'
     }
 ]
