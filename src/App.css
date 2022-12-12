@@ -724,16 +724,16 @@ th{
   font-size: 3rem;
 }
 .instagram-fo{
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   border-radius: 30%;
   position: relative;
 }
 .whatsapp-fo{
   margin-top: .5rem;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   background: rgb(37, 211, 102);
   border-radius: 30%;
 }
