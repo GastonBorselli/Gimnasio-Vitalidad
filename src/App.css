@@ -731,6 +731,7 @@ th{
   position: relative;
 }
 .whatsapp-fo{
+  margin-top: .5rem;
   height: 3rem;
   width: 3rem;
   background: rgb(37, 211, 102);
