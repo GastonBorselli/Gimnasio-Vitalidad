@@ -610,13 +610,25 @@ th{
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: .5rem;
+ 
+}
+.social a{
+  text-decoration: none;
+  color:white;
+  
 }
 .instagram{
-  margin: 0 1rem;
+  height: 4rem;
+  width: 4rem;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  border-radius: 30%;
+  position: relative;
 }
-.facebook{
-  margin: 0 1rem;
+.whatsapp{
+  height: 4rem;
+  width: 4rem;
+  background: rgb(37, 211, 102);
+  border-radius: 30%;
 }
 .description_social{
   color:#fff;
@@ -707,14 +719,23 @@ th{
   position: relative;
 }
 .footer form .social-icon{
-  margin: 1rem 1rem 1rem 0;
-  padding: .6rem;
   border-radius: 4px;
-  color: #161616;
+  color: #fff;
   font-size: 3rem;
 }
-
-
+.instagram-fo{
+  height: 3rem;
+  width: 3rem;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  border-radius: 30%;
+  position: relative;
+}
+.whatsapp-fo{
+  height: 3rem;
+  width: 3rem;
+  background: rgb(37, 211, 102);
+  border-radius: 30%;
+}
 
 .white-text{
   font-family: Arial, Helvetica, sans-serif;

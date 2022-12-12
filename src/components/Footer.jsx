@@ -33,8 +33,12 @@ export const Footer = () => {
           <form>
             <h3>Redes sociales</h3>
             <div className="social-group">
-            <a href="https://www.instagram.com/vitalidad.lm/" target={"blank"}><FiInstagram className='social-icon' size={'4rem'}/></a>
-            <a href="https://web.whatsapp.com/"><FaWhatsapp className='social-icon' size={'4rem'}/></a>
+              <div className="instagram-fo">
+              <a href="https://www.instagram.com/vitalidad.lm/" target={"blank"}><FiInstagram className='social-icon' size={'3rem'}/></a>
+            </div>
+            <div className="whatsapp-fo">
+              <a href="https://web.whatsapp.com/"><FaWhatsapp className='social-icon' size={'3rem'}/></a>
+            </div>
             </div>
           </form>
         </div>

@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import {FiInstagram} from 'react-icons/fi'
 import {FaWhatsapp} from 'react-icons/fa'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
 
@@ -16,12 +18,27 @@ export const Contact = () => {
     setValue(e.target.value);
   };
 
+  
+
+  const showToast = ()=>{
+    toast.success('Mensaje enviado exitosamente', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      });
+  }
+
   const sendEmail = (formData) => {
     emailjs
       .send("service_vz2epea", "template_alvr8eq", formData, "L6PjwWka8vB-v1ZjV")
       .then(
         (result) => {
-          console.log(result.text);
+          showToast();
         },
         (error) => {
           console.log(error.text);
@@ -81,8 +98,8 @@ export const Contact = () => {
               <label>Mensaje</label>
               <textarea className='message' name="message" cols="60" rows="10" {...register("message",{required:true})} />
               {errors.message?.type ==='required' && <small className='select'>Debe ingresar un mensaje</small>}
-              <button className='button' type="submit" value="Send">Enviar mensaje</button>
-        </form>
+              <button className='button' type="submit" value="Send">Enviar mensaje</button>              
+        </form>        
         
             <div className="description_social">
                 También podes contactarnos a través de las siguientes plataformas
@@ -91,11 +108,12 @@ export const Contact = () => {
             <div className='instagram'>
               <a href="https://www.instagram.com/vitalidad.lm/" target={"blank"}><FiInstagram size={'4rem'}/></a>
             </div>
-            <div className="facebook">
+            <div className="whatsapp">
               <a href="https://web.whatsapp.com/" target={"blank"}><FaWhatsapp size={'4rem'}/></a>
             </div>
           </div>
         </div>
+        <ToastContainer/>
     </div>
   )
 }
