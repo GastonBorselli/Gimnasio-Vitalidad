@@ -594,6 +594,7 @@ th{
   margin-top: .5rem;
   background-color: #e7e6e6d2;
   border-radius: 5px;
+  resize: none;
 }
 .form-container form small{
   margin-top: -2rem;

@@ -96,7 +96,7 @@ export const Contact = () => {
               {errors.user_trainning?.type ==='required' && <small className='select'>Debe seleccionar un entrenamiento</small>}
 
               <label>Mensaje</label>
-              <textarea className='message' name="message" cols="60" rows="10" {...register("message",{required:true})} />
+              <textarea className='message' name="message" placeholder='Deje su mensaje aquí' cols="60" rows="10" {...register("message",{required:true})} />
               {errors.message?.type ==='required' && <small className='select'>Debe ingresar un mensaje</small>}
               <button className='button' type="submit" value="Send">Enviar mensaje</button>              
         </form>        
